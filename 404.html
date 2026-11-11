@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found — Golden Visa For You</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0A1930">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+<style>
+  /* Base styles (shared with index.html) */
+  :root{--navy-deep:#0A1930;--navy-ink:#132845;--white:#FFFFFF;--sand:#F6F3EC;--ink:#1A2333;--ink-soft:#4A5468;--gold:#B8934A;--gold-light:#D9BE86;--gold-dim:#8A6C33;--line:rgba(184,147,74,0.28);--line-light:rgba(10,25,48,0.10);}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{max-width:100%;overflow-x:hidden;}
+  body{font-family:'Montserrat',system-ui,sans-serif;background:var(--sand);color:var(--ink);-webkit-font-smoothing:antialiased;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3,h4{font-family:'Montserrat',sans-serif;font-weight:700;line-height:1.15;letter-spacing:-0.02em;}
+  ::selection{background:var(--gold);color:var(--navy-deep);}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+  header{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(10,25,48,0.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 32px;max-width:1180px;margin:0 auto;}
+  .brand{display:flex;align-items:center;gap:12px;color:var(--white);font-weight:700;white-space:nowrap;}
+  .brand .mark{width:30px;height:30px;flex-shrink:0;}
+  .brand-text{display:flex;flex-direction:column;line-height:1.1;}
+  .brand-name{font-size:19px;font-weight:700;letter-spacing:-0.01em;color:var(--white);}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--gold-light),var(--gold));color:var(--navy-deep);font-weight:700;font-size:13px;padding:11px 22px;border-radius:2px;border:none;cursor:pointer;box-shadow:0 2px 14px rgba(184,147,74,0.35);transition:transform .2s ease,box-shadow .2s ease;white-space:nowrap;letter-spacing:0.02em;}
+  .nav-cta:hover{transform:translateY(-1px);box-shadow:0 4px 20px rgba(184,147,74,0.5);}
+  .btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,var(--gold-light),var(--gold));color:var(--navy-deep);font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;padding:16px 32px;border-radius:4px;border:none;cursor:pointer;box-shadow:0 4px 14px rgba(184,147,74,0.25);transition:transform .2s ease,box-shadow .2s ease;letter-spacing:0.02em;}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(184,147,74,0.4);}
+  @media (max-width:480px){.brand{gap:9px;}.brand .mark{width:25px;height:25px;}.brand-name{font-size:15.5px;}.nav-cta{padding:10px 14px;font-size:12px;}.nav-wrap{padding:14px 16px;}}
+  
+  /* Additional styling for the 404 page */
+  .error-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--navy-deep);
+    position: relative;
+    overflow: hidden;
+  }
+  .error-content { position: relative; z-index: 2; max-width: 600px; padding: 0 24px; }
+  .error-content h1 { font-size: clamp(60px, 10vw, 120px); color: var(--gold); margin-bottom: 10px; line-height: 1; }
+  .error-content h2 { font-size: clamp(24px, 4vw, 36px); color: var(--white); margin-bottom: 24px; }
+  .error-content p { color: rgba(255, 255, 255, 0.7); font-size: 16px; line-height: 1.6; margin-bottom: 40px; }
+  .fade-up{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1);}
+  .fade-up.visible{opacity:1;transform:none;}
+  .particles{position:absolute;inset:0;z-index:1;pointer-events:none;}
+  .particle{position:absolute;border-radius:50%;background:radial-gradient(circle,var(--gold-light) 0%,rgba(217,190,134,0) 70%);opacity:.55;animation:drift linear infinite;}
+  @keyframes drift{0%{transform:translate(0,0) scale(1);}50%{transform:translate(30px,-40px) scale(1.15);}100%{transform:translate(-10px,-90px) scale(.9);opacity:0;}}
+  @media (prefers-reduced-motion:reduce){.fade-up{opacity:1;transform:none;transition:none;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 26 26" fill="none"><path d="M13 1L15.5 9.5L24 12L15.5 14.5L13 23L10.5 14.5L2 12L10.5 9.5L13 1Z" fill="url(#g1)"/><defs><linearGradient id="g1" x1="2" y1="1" x2="24" y2="23"><stop stop-color="#D9BE86"/><stop offset="1" stop-color="#B8934A"/></linearGradient></defs></svg>
+      <span class="brand-text">
+        <span class="brand-name">Golden Visa For You</span>
+      </span>
+    </div>
+    <a href="/" class="nav-cta">Return Home</a>
+  </div>
+</header>
+
+<section class="error-hero">
+  <!-- Reusing your background particles effect -->
+  <div class="particles" id="particles"></div>
+  <div class="error-content fade-up">
+    <h1>404</h1>
+    <h2>Page Not Found</h2>
+    <p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+    <a href="/" class="btn-primary">Back to Homepage &rarr;</a>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('.fade-up').forEach(function(e){e.classList.add('visible');});
+(function(){var w=document.getElementById('particles');
+if(!w||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+for(var i=0;i<26;i++){var p=document.createElement('div');p.className='particle';var s=3+Math.random()*7;
+p.style.width=s+'px';p.style.height=s+'px';p.style.left=(Math.random()*100)+'%';p.style.top=(40+Math.random()*55)+'%';
+p.style.animationDuration=(8+Math.random()*10)+'s';p.style.animationDelay=(Math.random()*8)+'s';w.appendChild(p);}})();
+</script>
+</body>
+</html>
